@@ -1,0 +1,286 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red255\green255\blue255;\red170\green13\blue145;
+\red0\green0\blue0;\red196\green26\blue22;\red28\green0\blue207;\red46\green13\blue110;\red63\green110\blue116;
+\red92\green38\blue153;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c45600\c0;\csgray\c100000;\csgenericrgb\c66500\c5200\c56900;
+\csgenericrgb\c0\c0\c0;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c24700\c43100\c45600;
+\csgenericrgb\c35900\c14900\c60100;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //: Playground - noun: a place where people can play
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 import\cf5  UIKit
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  str = \cf6 \cb3 "Hello, playground"
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 // Array declaration
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  a = [\cf7 10\cf5 ,\cf7 30\cf5 ,\cf7 40\cf5 ,\cf7 50\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 \cb3 "sreejith"\cf5 \cb3 , \cf9 a\cf5 [\cf7 1\cf5 ])
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 a\cf5 )      \cf2 \cb3 // printing the entire array.
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 // Assigning default value to the array
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  num1 = [\cf10 Int\cf5 ](repeating: \cf7 5\cf5 ,count:\cf7 3\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 num1\cf5 )
+\f1\fs24 \cf0 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 //Merging two arrays
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  num2 = [\cf10 Int\cf5 ](repeating: \cf7 5\cf5 ,count:\cf7 3\cf5 )    \cf2 \cb3 // array 1
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 num2\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  num3 = [\cf10 Int\cf5 ](repeating: \cf7 7\cf5 ,count:\cf7 3\cf5 )   \cf2 \cb3 //  array 2
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 num3\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  merged_array = \cf9 num3
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     + \cf9 num2
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 merged_array\cf5 )
+\f1\fs24 \cf0 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+\
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 // Declaring a new array that accepts any data type
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  num4 =  [\cf4 Any\cf5 ]()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 num4\cf5 .\cf8 append\cf5 (\cf7 1000\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 num4\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf9 num4\cf5 .\cf8 append\cf5 (\cf6 \cb3 "Sreejith"\cf5 \cb3 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 num4\cf5 )
+\f1\fs24 \cf0 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+\
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 //using an array of contents
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  x = \cf9 a\cf5 [\cf7 1\cf5 ...\cf7 3\cf5 ]       \cf2 \cb3 //   a[1...3] is used to pick data from 1 to 3
+\f1\fs24 \cf0 \cb3 \
+\
+
+\f0\fs22 \cf4 for\cf5  t \cf4 in\cf5  \cf9 x\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 print\cf5 (\cf6 \cb3 "x :"\cf5 \cb3 ,t)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 // enumerate key for arrays.
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 // String array and for-each with (key,value)
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 //var Shoppinglist : [String] = ["Milk","Cheese"]
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 //for(index,value) in Shoppinglist.enumerated()
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 //print(""")
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+\
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 // using sets
+\f1\fs24 \cf0 \cb3 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5  grades : \cf10 Set\cf5 <\cf10 Character\cf5 > = []
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 grades\cf5 .\cf8 insert\cf5 (\cf6 \cb3 "s"\cf5 \cb3 )   \cf2 \cb3 // inserting values in set.
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf9 grades\cf5 .\cf8 insert\cf5 (\cf6 \cb3 "a"\cf5 \cb3 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 \cb3 "set = "\cf5 \cb3 ,\cf9 grades\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 grades\cf5 .\cf8 insert\cf5 (\cf6 \cb3 "m"\cf5 \cb3 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 \cb3 "set = "\cf5 \cb3 ,\cf9 grades\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf8 print\cf5 (\cf6 \cb3 "No.of elements in array"\cf5 \cb3 ,\cf9 grades\cf5 .\cf10 count\cf5 )  \cf2 \cb3 // getting the count of the arrays.
+\f1\fs24 \cf0 \cb3 \
+\
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 var\cf5   favouriteGenere: \cf10 Set\cf5 <\cf10 String\cf5 > = [\cf6 \cb3 "rock"\cf5 \cb3 ,\cf6 \cb3 "classical"\cf5 \cb3 ,\cf6 \cb3 "pop"\cf5 \cb3 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 favouriteGenere\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf8 print\cf5 (\cf6 \cb3 "I have "\cf5 \cb3 ,\cf9 favouriteGenere\cf5 ,\cf6 \cb3 "in my collection"\cf5 \cb3 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 if\cf5  \cf9 favouriteGenere\cf5 .\cf10 isEmpty
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 print\cf5 (\cf6 \cb3 "Set is empty"\cf5 \cb3 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 else\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 print\cf5 (\cf6 \cb3 "the set is not empty"\cf5 \cb3 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf8 print\cf5 (\cf9 favouriteGenere\cf5 .\cf10 count\cf5 )  \cf2 \cb3 // displaying the count of the set.
+\f1\fs24 \cf0 \cb3 \
+\
+
+\f0\fs22 \cf9 favouriteGenere\cf5 .\cf8 insert\cf5 (\cf6 \cb3 "hip-hop"\cf5 \cb3 )    \cf2 \cb3 //adding a new element to the list
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 favouriteGenere\cf5 )
+\f1\fs24 \cf0 \
+\
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //*******************************************************
+\f1\fs24 \cf0 \cb3 \
+
+\f0\fs22 \cf2 \cb3 // set operations
+\f1\fs24 \cf0 \cb3 \
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf4 let\cf5  od: \cf10 Set\cf5  = [\cf7 1\cf5 ,\cf7 3\cf5 ,\cf7 5\cf5 ,\cf7 7\cf5 ,\cf7 9\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 let\cf5  ed: \cf10 Set\cf5  = [\cf7 0\cf5 ,\cf7 2\cf5 ,\cf7 4\cf5 ,\cf7 6\cf5 ,\cf7 8\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 let\cf5  sdpn: \cf10 Set\cf5  = [\cf7 2\cf5 ,\cf7 3\cf5 ,\cf7 5\cf5 ,\cf7 7\cf5 ]
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf8 print\cf5 (\cf9 od\cf5 .\cf8 union\cf5 (\cf9 ed\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 od\cf5 .\cf8 intersection\cf5 (\cf9 ed\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 od\cf5 .\cf8 subtracting\cf5 (\cf9 sdpn\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 od\cf5 .\cf8 symmetricDifference\cf5 (\cf9 sdpn\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
