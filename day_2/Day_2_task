@@ -1,0 +1,27 @@
+//printing the string in reverse order
+var name :String = "Sreejith"
+var count_name: Int = name.count
+
+print("The name in non-reverse format :")
+var i :Character
+var limit = Int(name.count)
+var j :Int = 0
+
+j = 0
+while( j <= limit) {
+  i = name[name.index(name.startIndex,offsetBy: j)]
+  print("\n",i)
+  j = j+1
+
+}
+
+print("The name in reverse format :")
+
+
+j = limit-1
+while( j >= 0) {
+  i = name[name.index(name.startIndex,offsetBy: j)]
+  print("\n",i)
+  j = j-1
+
+}
